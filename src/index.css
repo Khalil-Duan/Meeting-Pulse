@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局底色与字体微调 */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #f9fafb; /* gray-50 */
+  color: #111827; /* gray-900 */
+}
