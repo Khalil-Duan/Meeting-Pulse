@@ -114,13 +114,13 @@ export default function DashboardPage({ tenantId }: { tenantId: TenantId }) {
                 <XAxis dataKey="monthLabel" />
                 <YAxis
                   domain={[0, 5]}
-                  tickFormatter={(v) => Number(v).toFixed(1)}
+                  tickFormatter={(v: any) => Number(v).toFixed(1)}
                 />
                 <Tooltip
                   formatter={(value: unknown) =>
                     typeof value === "number" ? value.toFixed(1) : value
                   }
-                  labelFormatter={(label) => String(label)}
+                  labelFormatter={(label: any) => String(label)}
                 />
                 <Line
                   type="monotone"
